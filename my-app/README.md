@@ -1,16 +1,37 @@
-# React + Vite
+Fetch Data Demo (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app demonstrates a simple frontend calling a public mock API and showing the returned data.
 
-Currently, two official plugins are available:
+How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. When the user clicks the "Fetch Data" button
 
-## React Compiler
+2. A request is sent to: https://jsonplaceholder.typicode.com/posts/1
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. JSON response is received
 
-## Expanding the ESLint configuration
+4. UI updates to show title and body
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Shows:
+
+    1. Loading message
+
+    2. Error message if fetch fails
+
+Steps to Run:
+
+1. Clone repository
+
+2. Install dependencies
+     npm install
+
+3. Start project
+     npm run dev
+
+API Used:
+
+https://jsonplaceholder.typicode.com/posts/1
+
+Screenshot:
+
+See /screenshots folder
